@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-[diary 项目地址](https://github.com/xian521/diary.git)
-=======
-#diary
->>>>>>> 7529c66245a79cd8fc4d2d521c23ca483db17dc4
+
+#[diary 项目地址] (https://github.com/xian521/diary.git)
+
 
 ##项目介绍
 >this is diary project
@@ -39,11 +37,6 @@ npm run build
     日期时间不能修改，心情好坏不能修改，只能修改日记内容
 	
 5.日记统计页面
-<<<<<<< HEAD
     可以根据心情好坏，统计出每个月或者每一年的心情
 ```
-=======
 
-	可以根据心情好坏，统计出每个月或者每一年的心情
-```
->>>>>>> 7529c66245a79cd8fc4d2d521c23ca483db17dc4
