@@ -1,4 +1,4 @@
-##diary
+#diary
 
 ##项目介绍
 >this is diary project
