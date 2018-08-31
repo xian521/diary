@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import diaryList from '@/components/diary-list'
 
 Vue.use(Router)
 
@@ -8,13 +8,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'diary-list',
+      component: diaryList
     },
 		{
-			path: '/HelloWorld',
-			name: 'HelloWorld',
-			component: HelloWorld
+			path: '/diary-list',
+			name: 'diaryList',
+			component: diaryList
 		}
   ]
 })
