@@ -6,42 +6,37 @@
     <el-table-column type="expand">
       <template slot-scope="props">
         <el-form label-position="left" inline class="demo-table-expand">
-          <el-form-item label="商品名称">
-            <span>{{ props.row.name }}</span>
+          <el-form-item label="标题">
+            <span>{{ props.row.title }}</span>
           </el-form-item>
-          <el-form-item label="所属店铺">
-            <span>{{ props.row.shop }}</span>
+          <el-form-item label="心情">
+            <span>{{ props.row.mood }}</span>
           </el-form-item>
-          <el-form-item label="商品 ID">
-            <span>{{ props.row.id }}</span>
-          </el-form-item>
-          <el-form-item label="店铺 ID">
-            <span>{{ props.row.shopId }}</span>
-          </el-form-item>
-          <el-form-item label="商品分类">
-            <span>{{ props.row.category }}</span>
-          </el-form-item>
-          <el-form-item label="店铺地址">
-            <span>{{ props.row.address }}</span>
-          </el-form-item>
-          <el-form-item label="商品描述">
+          <el-form-item label="内容">
             <span>{{ props.row.desc }}</span>
           </el-form-item>
         </el-form>
       </template>
     </el-table-column>
     <el-table-column
-      label="商品 ID"
-      prop="id">
+      label="日期"
+      prop="date">
     </el-table-column>
     <el-table-column
-      label="商品名称"
-      prop="name">
+      label="标题"
+      prop="title">
     </el-table-column>
     <el-table-column
-      label="描述"
-      prop="desc">
+      label="心情"
+      prop="mood">
     </el-table-column>
+		<el-table-column
+			label="操作" 
+			prop="operation">
+		</el-table-column>
+		<el-table-column
+			label="">
+		</el-table-column>
   </el-table>
   </div>
 </template>
@@ -52,37 +47,33 @@ export default {
   data() {
 		return {
 			tableData5: [{
-				id: '12987122',
-				name: '好滋好味鸡蛋仔',
-				category: '江浙小吃、小吃零食',
-				desc: '荷兰优质淡奶，奶香浓而不腻',
-				address: '上海市普陀区真北路',
-				shop: '王小虎夫妻店',
-				shopId: '10333'
+				id: '1',
+				date: '2018-08-30',
+				title: '今天下雨了,不开心',
+				mood: '良好',
+				desc: '今天停网了,想么怎么办,技术的空间发拉斯科荆防颗粒技术了解分手快乐尖峰时刻了京东方加速度快了放假奥斯卡逻辑回归卡号噶几打飞机撒龙卷风',
+				operation: '编辑 | 删除'
 			}, {
-				id: '12987123',
-				name: '好滋好味鸡蛋仔',
-				category: '江浙小吃、小吃零食',
-				desc: '荷兰优质淡奶，奶香浓而不腻',
-				address: '上海市普陀区真北路',
-				shop: '王小虎夫妻店',
-				shopId: '10333'
+				id: '1',
+				date: '2018-08-30',
+				title: '今天下雨了,不开心',
+				mood: '良好',
+				desc: '今天停网了,想么怎么办,技术的空间发拉斯科荆防颗粒技术了解分手快乐尖峰时刻了京东方加速度快了放假奥斯卡逻辑回归卡号噶几打飞机撒龙卷风',
+				operation: '编辑 | 删除'
 			}, {
-				id: '12987125',
-				name: '好滋好味鸡蛋仔',
-				category: '江浙小吃、小吃零食',
-				desc: '荷兰优质淡奶，奶香浓而不腻',
-				address: '上海市普陀区真北路',
-				shop: '王小虎夫妻店',
-				shopId: '10333'
+				id: '1',
+				date: '2018-08-30',
+				title: '今天下雨了,不开心',
+				mood: '良好',
+				desc: '今天停网了,想么怎么办,技术的空间发拉斯科荆防颗粒技术了解分手快乐尖峰时刻了京东方加速度快了放假奥斯卡逻辑回归卡号噶几打飞机撒龙卷风',
+				operation: '编辑 | 删除'
 			}, {
-				id: '12987126',
-				name: '好滋好味鸡蛋仔',
-				category: '江浙小吃、小吃零食',
-				desc: '荷兰优质淡奶，奶香浓而不腻',
-				address: '上海市普陀区真北路',
-				shop: '王小虎夫妻店',
-				shopId: '10333'
+				id: '1',
+				date: '2018-08-30',
+				title: '今天下雨了,不开心',
+				mood: '良好',
+				desc: '今天停网了,想么怎么办,技术的空间发拉斯科荆防颗粒技术了解分手快乐尖峰时刻了京东方加速度快了放假奥斯卡逻辑回归卡号噶几打飞机撒龙卷风',
+				operation: '编辑 | 删除'
 			}]
 		}
 	}
@@ -101,6 +92,7 @@ export default {
 .demo-table-expand .el-form-item {
 	margin-right: 0;
 	margin-bottom: 0;
-	width: 50%;
+	width: 100%;
 }
+
 </style>
