@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import diaryList from '@/components/diary-list'
+
+
+import list from '@/components/list'
+import insert from '@/components/insert'
+import statistic from '@/components/statistic'
+
 
 Vue.use(Router)
 
@@ -8,13 +13,23 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'diary-list',
-      component: diaryList
+      name: 'list',
+      component: list
     },
 		{
-			path: '/diary-list',
-			name: 'diaryList',
-			component: diaryList
+			path: '/list',
+			name: 'list',
+			component: list
+		},
+		{
+			path: '/insert',
+			name: 'insert',
+			component: insert
+		},
+		{
+			path: '/statistic',
+			name: 'statistic',
+			component: statistic
 		}
   ]
 })
