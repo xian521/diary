@@ -34,7 +34,7 @@
 			};
 		},
 		methods: {
-			goRouter(route, index) {
+			goRouter(route,index) {
 				this.qwerqwre = index;
 				this.$router.push({
 					path: route,
@@ -42,6 +42,16 @@
 						uid: "1111"
 					}
 				});
+			}
+		},
+		mounted (){
+			let r = this.$route.name;
+			if(r == 'list'){
+				this.qwerqwre = 0;
+			}else if(r == 'insert'){
+				this.qwerqwre = 1;
+			}if(r == 'statistic'){
+				this.qwerqwre = 2;
 			}
 		},
 		components: {
