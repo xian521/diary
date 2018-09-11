@@ -1,16 +1,22 @@
 <template>
   <div class="statistic">
-    https://viserjs.github.io/docs.html#/viser/guide/installation
+    <echartsCircle></echartsCircle>
+    <!--<hr color="#eee" />-->
   </div>
 </template>
 
 <script>
+  import echartsCircle from './echartsCircle.vue'
 	export default {
-		name: 'diaryList',
+		name: 'statistic',
 		data() {
 			return {
+
 			}
-		}
+		},
+    components: {
+      echartsCircle
+    }
 	}
 </script>
 
@@ -20,5 +26,6 @@
 		width: 1200px;
 		margin: 0 auto;
 		border: 1px solid #eee;
+    text-align: center;
 	}
 </style>
