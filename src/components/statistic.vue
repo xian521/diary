@@ -10,7 +10,7 @@
 	export default {
 		name: 'statistic',
 		data() {
-			return {
+		 	return {
 
 			}
 		},
